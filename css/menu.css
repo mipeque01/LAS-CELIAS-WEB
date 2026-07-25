@@ -609,3 +609,22 @@ font-size:14px;
     color:#5B3A29;
     font-size:16px;
 }
+
+.flavors-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.flavor-price{
+    color:#C62828;
+    font-weight:700;
+    font-size:18px;
+}
+
+.flavors-grid span{
+    display:block;
+    padding:8px 0;
+    font-size:20px;
+}

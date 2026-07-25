@@ -688,3 +688,22 @@ footer p{
     }
 
 }
+
+.menu-content{
+    text-align:left;
+    line-height:1.6;
+    padding:20px;
+}
+
+.menu-content h4{
+    margin-top:20px;
+    color:#8b1e3f;
+}
+
+.menu-content p{
+    margin:8px 0;
+}
+
+.menu-content ul{
+    margin:5px 0 15px 20px;
+}

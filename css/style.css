@@ -8,26 +8,26 @@
    RESET
 ========================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 110%;
 }
 
-html{
-    scroll-behavior:smooth;
-}
+body {
+    font-family: Arial, Helvetica, sans-serif;
 
-body{
+    background-image:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("../images/background/fondo.webp");
 
-    font-family:Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 
-    background:#111;
-
-    color:#ffffff;
-
-    overflow-x:hidden;
-
+    color: #fff;
 }
 
 /* =========================
@@ -53,16 +53,6 @@ body{
     text-align:center;
 
     overflow:hidden;
-
-    background-image:
-        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-        url("../images/background/fondo.webp");
-
-    background-size:cover;
-
-    background-position:center;
-
-    background-repeat:no-repeat;
 
 }
 
@@ -281,7 +271,6 @@ body{
 
     text-transform:uppercase;
 
-    color:#ffffff;
 
 }
 
@@ -295,7 +284,6 @@ body{
 
     line-height:1.6;
 
-    color:#eeeeee;
 
 }
 
@@ -605,27 +593,28 @@ footer p{
 
     .social-card{
 
-        padding:30px 25px;
+        padding:22px 20px;
 
     }
 
     .social-card img{
 
-        width:60px;
+        width:46px;
 
-        height:60px;
+        height:46px;
 
     }
 
     .social-card h3{
 
-        font-size:24px;
+        font-size:20px;
 
     }
 
     .social-card p{
 
-        font-size:16px;
+        font-size:15px;
+    line-height:1.5;
 
     }
 
@@ -677,7 +666,7 @@ footer p{
 
     .social-section{
 
-        padding:55px 15px;
+        padding:35px 15px;
 
     }
 

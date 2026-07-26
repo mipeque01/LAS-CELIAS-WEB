@@ -172,11 +172,11 @@ body{
 ========================= */
 
 .btn-menu{
-    background:#C62828;
+    background:#7d1d3f;
 }
 
 .btn-menu:hover{
-    background:#B71C1C;
+    background:#7d1d3f;
 }
 
 /* =========================
@@ -184,11 +184,11 @@ body{
 ========================= */
 
 .btn-location{
-    background:#2E7D32;
+    background:#1fc7be;
 }
 
 .btn-location:hover{
-    background:#1B5E20;
+    background:#1fc7be;
 }
 
 /* =========================

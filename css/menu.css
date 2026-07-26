@@ -672,3 +672,58 @@ font-size:14px;
 .btn-whatsapp-menu i{
     font-size:28px;
 }
+
+/*======================================
+            DRINKS
+======================================*/
+
+.section-description{
+    text-align:center;
+    color:#c2185b;
+    font-size:18px;
+    font-weight:600;
+    margin:12px 0 18px;
+    line-height:1.4;
+}
+
+.flavor-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px 24px;
+    margin-bottom:18px;
+}
+
+.flavor-grid span{
+    color:#222;
+    font-size:20px;
+    font-weight:600;
+}
+
+.drink-divider{
+    text-align:center;
+    color:#c2185b;
+    font-size:18px;
+    letter-spacing:8px;
+    margin:8px 0 12px;
+}
+
+.drink-sizes h3{
+    text-align:center;
+    color:#222;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+/* SUBTÍTULOS DE LAS SECCIONES */
+
+.menu-subtitle{
+    margin-top:10px;
+    font-size:18px;
+    font-weight:500;
+    color:#ffe6f2;
+    text-align:center;
+    text-transform:none;
+    letter-spacing:0.5px;
+}

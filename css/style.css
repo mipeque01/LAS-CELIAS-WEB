@@ -1,33 +1,50 @@
 /* ==========================================================
    LAS CELIAS
    AUTHENTIC MEXICAN KITCHEN
-   Main Stylesheet
+   MAIN STYLESHEET
 ========================================================== */
 
 /* =========================
    RESET
 ========================= */
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 110%;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+html{
+    scroll-behavior:smooth;
+}
 
-    background-image:
-        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-        url("../images/background/fondo.webp");
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#ffffff;
+    background:#111;
+    overflow-x:hidden;
+    line-height:1.6;
+}
 
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+/* =========================
+   BACKGROUND
+========================= */
 
-    color: #fff;
+.background{
+    position:fixed;
+    inset:0;
+    background-image:url("../images/background/fondo.webp");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:52% center;
+    z-index:-2;
+}
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    z-index:-1;
 }
 
 /* =========================
@@ -35,46 +52,22 @@ body {
 ========================= */
 
 .hero{
-
-    position:relative;
-
     width:100%;
-
-    min-height:100vh;
-
+    min-height:90vh;
     display:flex;
-
-    justify-content: flex-start;
-
-    padding: 70px 20px;
-
+    justify-content:center;
     align-items:center;
-
     text-align:center;
-
-    overflow:hidden;
-
+    padding:35px 20px 25px;
+    position:relative;
 }
-
-/* =========================
-   OVERLAY
-========================= */
-
-.overlay{
-
-    width:100%;
-
-    padding:40px 20px;
-
-}
-
-/* =========================
-   HERO CONTENT
-========================= */
 
 .hero-content{
-    max-width:700px;
-    margin:0 auto;
+    width:100%;
+    max-width:720px;
+    margin:auto;
+    position:relative;
+    z-index:2;
 }
 
 /* =========================
@@ -82,13 +75,10 @@ body {
 ========================= */
 
 .logo{
-
-    width:260px;
-
+    display:block;
+    width:340px;
     max-width:90%;
-
-    margin-bottom:30px;
-
+    margin:0 auto 20px;
 }
 
 /* =========================
@@ -96,17 +86,12 @@ body {
 ========================= */
 
 .subtitle{
-
     color:#D6B04A;
-
-    letter-spacing:5px;
-
     font-size:15px;
-
-    margin-bottom:20px;
-
+    letter-spacing:4px;
     text-transform:uppercase;
-
+    margin-bottom:12px;
+    font-weight:600;
 }
 
 /* =========================
@@ -114,21 +99,12 @@ body {
 ========================= */
 
 .hero h1{
-
-    font-size: 2.8rem;
-
+    font-size:3.2rem;
     font-weight:800;
-
     line-height:1.1;
-
-    margin: 15px 0;
-
-    margin-bottom:25px;
-
     text-transform:uppercase;
-
-    text-shadow:0 5px 18px rgba(0,0,0,.45);
-
+    margin-bottom:18px;
+    text-shadow:0 6px 18px rgba(0,0,0,.45);
 }
 
 /* =========================
@@ -136,15 +112,10 @@ body {
 ========================= */
 
 .description{
-
-    font-size:24px;
-
-    line-height:1.6;
-
-    color:white;
-
-    margin-bottom:45px;
-
+    max-width:620px;
+    margin:0 auto 30px;
+    font-size:22px;
+    color:#fff;
 }
 
 /* =========================
@@ -152,17 +123,12 @@ body {
 ========================= */
 
 .main-buttons{
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
-    gap:20px;
-
     flex-wrap:wrap;
-
+    gap:18px;
+    margin-top:10px;
 }
 
 /* =========================
@@ -170,43 +136,35 @@ body {
 ========================= */
 
 .btn{
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     gap:12px;
 
     width:240px;
-
-    height:65px;
+    height:62px;
 
     border-radius:14px;
 
     text-decoration:none;
+    color:#fff;
 
-    font-size:18px;
-
+    font-size:17px;
     font-weight:700;
 
-    transition:.30s;
+    transition:all .30s ease;
 
     box-shadow:0 10px 25px rgba(0,0,0,.35);
-
 }
 
-/* =========================
-   BUTTON ICONS
-========================= */
-
 .btn img{
+    width:24px;
+    height:24px;
+    object-fit:contain;
+}
 
-    width:26px;
-
-    height:26px;
-
+.btn:hover{
+    transform:translateY(-4px);
 }
 
 /* =========================
@@ -214,19 +172,11 @@ body {
 ========================= */
 
 .btn-menu{
-
     background:#C62828;
-
-    color:white;
-
 }
 
 .btn-menu:hover{
-
     background:#B71C1C;
-
-    transform:translateY(-4px);
-
 }
 
 /* =========================
@@ -234,19 +184,11 @@ body {
 ========================= */
 
 .btn-location{
-
     background:#2E7D32;
-
-    color:white;
-
 }
 
 .btn-location:hover{
-
     background:#1B5E20;
-
-    transform:translateY(-4px);
-
 }
 
 /* =========================
@@ -254,55 +196,39 @@ body {
 ========================= */
 
 .social-section{
-
-    padding:90px 20px;
-
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px 20px 40px;
     text-align:center;
-
 }
 
 .social-section h2{
-
-    font-size:42px;
-
+    font-size:40px;
     font-weight:800;
-
-    margin-bottom:18px;
-
     text-transform:uppercase;
-
-
+    margin-bottom:12px;
+    letter-spacing:1px;
 }
 
-.social-section p{
-
-    max-width:700px;
-
-    margin:0 auto 55px;
-
-    font-size:20px;
-
+.social-section > p{
+    max-width:650px;
+    margin:0 auto 30px;
+    font-size:18px;
     line-height:1.6;
-
-
+    color:#f5f5f5;
 }
 
 /* =========================
-   SOCIAL CARDS CONTAINER
+   SOCIAL GRID
 ========================= */
 
 .social-grid{
-
     display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:30px;
-
-    max-width:1100px;
-
-    margin:auto;
-
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;
+    max-width:1000px;
+    margin:0 auto;
 }
 
 /* =========================
@@ -310,73 +236,38 @@ body {
 ========================= */
 
 .social-card{
-
     background:rgba(255,255,255,.08);
-
     backdrop-filter:blur(12px);
-
     border:1px solid rgba(255,255,255,.18);
-
-    border-radius:22px;
-
-    padding:40px 30px;
-
-    transition:.35s;
-
+    border-radius:20px;
+    padding:28px 22px;
     text-decoration:none;
-
-    color:white;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.30);
-
+    color:#fff;
+    transition:.30s;
+    box-shadow:0 12px 30px rgba(0,0,0,.28);
 }
 
 .social-card:hover{
-
-    transform:translateY(-8px);
-
+    transform:translateY(-6px);
 }
-
-/* =========================
-   SOCIAL ICON
-========================= */
 
 .social-card img{
-
-    width:70px;
-
-    height:70px;
-
+    width:56px;
+    height:56px;
     object-fit:contain;
-
-    margin-bottom:25px;
-
+    margin-bottom:16px;
 }
-
-/* =========================
-   SOCIAL TITLE
-========================= */
 
 .social-card h3{
-
-    font-size:28px;
-
-    margin-bottom:15px;
-
+    font-size:22px;
+    margin-bottom:10px;
 }
 
-/* =========================
-   SOCIAL DESCRIPTION
-========================= */
-
 .social-card p{
-
-    font-size:17px;
-
-    line-height:1.6;
-
     margin:0;
-
+    font-size:15px;
+    line-height:1.6;
+    color:#f0f0f0;
 }
 
 /* =========================
@@ -384,21 +275,15 @@ body {
 ========================= */
 
 .instagram:hover{
-
     border-color:#E1306C;
-
 }
 
 .tiktok:hover{
-
     border-color:#25F4EE;
-
 }
 
 .facebook:hover{
-
     border-color:#1877F2;
-
 }
 
 /* =========================
@@ -406,49 +291,35 @@ body {
 ========================= */
 
 .whatsapp-button{
-
     position:fixed;
+    right:20px;
+    bottom:20px;
 
-    bottom:25px;
-
-    right:25px;
-
-    width:70px;
-
-    height:70px;
+    width:64px;
+    height:64px;
 
     border-radius:50%;
-
     background:#25D366;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
-    box-shadow:0 12px 30px rgba(0,0,0,.35);
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+    z-index:9999;
 
     transition:.30s;
-
-    z-index:999;
-
 }
 
 .whatsapp-button:hover{
-
-    transform:scale(1.10);
-
+    transform:scale(1.08);
     background:#1EBE5D;
-
 }
 
 .whatsapp-button img{
-
-    width:38px;
-
-    height:38px;
-
+    width:34px;
+    height:34px;
 }
 
 /* =========================
@@ -456,67 +327,49 @@ body {
 ========================= */
 
 footer{
-
-    margin-top:90px;
-
-    padding:35px 20px;
-
+    margin-top:45px;
+    padding:22px 20px;
     text-align:center;
 
     background:rgba(0,0,0,.75);
-
-    border-top:1px solid rgba(255,255,255,.10);
-
+    border-top:1px solid rgba(255,255,255,.12);
 }
 
 footer p{
-
-    color:#dddddd;
-
-    font-size:16px;
-
-    letter-spacing:1px;
-
+    font-size:15px;
+    color:#e6e6e6;
+    letter-spacing:.5px;
 }
 
 /* ==========================================================
-   RESPONSIVE DESIGN
+   RESPONSIVE
 ========================================================== */
 
 /* =========================
-   TABLETS
+   TABLET
 ========================= */
 
 @media (max-width:992px){
 
     .hero{
-
-        min-height:100vh;
-
+        min-height:85vh;
+        padding:30px 20px;
     }
 
     .logo{
-
-        width:220px;
-
+        width:300px;
     }
 
     .hero h1{
-
-        font-size:52px;
-
+        font-size:2.8rem;
     }
 
     .description{
-
-        font-size:21px;
-
+        font-size:20px;
     }
 
     .social-section{
-
-        padding:70px 20px;
-
+        padding:20px 20px 35px;
     }
 
 }
@@ -527,115 +380,100 @@ footer p{
 
 @media (max-width:768px){
 
+    .background{
+        background-position:52% center;
+    }
+
     .hero{
+        min-height:auto;
+        padding:20px 18px 15px;
+    }
 
-        padding:40px 20px;
-
+    .hero-content{
+        max-width:100%;
     }
 
     .logo{
-
-        width:180px;
-
-        margin-bottom:25px;
-
+        width:240px;
+        margin-bottom:15px;
     }
 
     .subtitle{
-
         font-size:13px;
-
-        letter-spacing:3px;
-
+        letter-spacing:2px;
     }
 
     .hero h1{
-
-        font-size:40px;
-
+        font-size:2rem;
+        margin-bottom:12px;
     }
 
     .description{
-
-        font-size:18px;
-
-        margin-bottom:35px;
-
+        font-size:17px;
+        margin-bottom:25px;
     }
 
     .main-buttons{
-
         flex-direction:column;
-
+        gap:12px;
     }
 
     .btn{
-
         width:100%;
-
         max-width:320px;
+        height:58px;
+        font-size:16px;
+    }
 
-        height:60px;
-
+    .social-section{
+        padding:15px 18px 30px;
     }
 
     .social-section h2{
-
-        font-size:34px;
-
+        font-size:30px;
     }
 
-    .social-section p{
+    .social-section > p{
+        font-size:16px;
+        margin-bottom:20px;
+    }
 
-        font-size:17px;
-
+    .social-grid{
+        gap:16px;
     }
 
     .social-card{
-
-        padding:22px 20px;
-
+        padding:22px 18px;
     }
 
     .social-card img{
-
-        width:46px;
-
-        height:46px;
-
+        width:50px;
+        height:50px;
     }
 
     .social-card h3{
-
         font-size:20px;
-
     }
 
     .social-card p{
-
-        font-size:15px;
-    line-height:1.5;
-
+        font-size:14px;
     }
 
     .whatsapp-button{
-
-        width:62px;
-
-        height:62px;
-
-        right:18px;
-
-        bottom:18px;
-
+        width:60px;
+        height:60px;
+        right:16px;
+        bottom:16px;
     }
 
     .whatsapp-button img{
+        width:30px;
+        height:30px;
+    }
 
-        width:34px;
-
-        height:34px;
-
+    footer{
+        margin-top:30px;
+        padding:18px 15px;
     }
 
 }
@@ -646,53 +484,29 @@ footer p{
 
 @media (max-width:480px){
 
+    .logo{
+        width:210px;
+    }
+
     .hero h1{
-
-        font-size:34px;
-
+        font-size:1.7rem;
     }
 
     .description{
-
-        font-size:16px;
-
+        font-size:15px;
     }
 
     .subtitle{
-
-        font-size:12px;
-
+        font-size:11px;
     }
 
-    .social-section{
-
-        padding:35px 15px;
-
+    .btn{
+        height:55px;
+        font-size:15px;
     }
 
-    footer{
-
-        padding:25px 15px;
-
+    .social-section h2{
+        font-size:26px;
     }
 
-}
-
-.menu-content{
-    text-align:left;
-    line-height:1.6;
-    padding:20px;
-}
-
-.menu-content h4{
-    margin-top:20px;
-    color:#8b1e3f;
-}
-
-.menu-content p{
-    margin:8px 0;
-}
-
-.menu-content ul{
-    margin:5px 0 15px 20px;
 }

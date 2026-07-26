@@ -727,3 +727,28 @@ font-size:14px;
     text-transform:none;
     letter-spacing:0.5px;
 }
+
+/* ===== SIDES ===== */
+
+.section-description{
+    margin-top: 8px;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 15px;
+    color: #7d1d3f;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.menu-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.menu-card span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}

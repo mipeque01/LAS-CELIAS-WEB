@@ -752,3 +752,10 @@ font-size:14px;
     font-weight: 600;
     color: #222;
 }
+.side-price{
+    text-align:center;
+    font-size:18px;
+    font-weight:700;
+    color:#C62828;   /* mismo rojo que usas en los precios */
+    margin:10px 0 15px;
+}

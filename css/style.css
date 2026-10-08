@@ -508,6 +508,75 @@ footer p{
     .social-section h2{
         font-size:26px;
     }
+/* =========================
+   WEDNESDAY PROMOTION
+========================= */
 
+.promo-section {
+    width: 100%;
+    padding: 0 20px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.promo-home {
+    width: 100%;
+    max-width: 340px;
+}
+
+.promo-home img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.30);
+}
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 768px) {
+
+    .promo-section {
+        padding: 0 25px 25px;
+    }
+
+    .promo-home {
+        max-width: 300px;
+    }
+
+    .promo-home img {
+        width: 100%;
+        height: auto;
+        max-height: 330px;
+        object-fit: contain;
+        border-radius: 14px;
+    }
+}
+
+/* =========================
+   CELULARES PEQUEÑOS
+========================= */
+
+@media (max-width: 480px) {
+
+    .promo-section {
+        padding: 0 30px 25px;
+    }
+
+    .promo-home {
+        max-width: 270px;
+    }
+
+    .promo-home img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+        border-radius: 13px;
+    }
+}
